@@ -1,6 +1,9 @@
 [submodule "41023218"]
 	path = 41023218
 	url = https://github.com/snowfall-killer/wcm2024.git
+[submodule "41223103"]
+	path = 41223103
+	url = https://github.com/CYG41223103/wcm2024
 [submodule "41145405"]
 	path = 41145405
 	url = https://github.com/LINTSH/wcm2024.git
