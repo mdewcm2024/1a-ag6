@@ -1,0 +1,658 @@
+<!DOCTYPE html><html>
+        <head>
+        <title>cmsimde_site</title>
+        <meta charset="utf-8">
+<meta property="head" content="H3">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/magnific-popup.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/jquery-ui.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap-datepicker.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/flaticon/font/flaticon.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/aos.css">
+        <link rel="stylesheet" href="./../cmsimde/static/chimper/css/style.css">
+        <link rel="shortcut icon" href="./../cmsimde/static/favicons.png">
+
+        <style type='text/css'>
+            .site-section {
+            background-color: #FFFF;
+            padding: 40px 40px;
+            }
+            body > div > div.dropdown.open {
+                display: block;
+            }
+        </style>
+    
+        <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+        <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/normalize.min.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch_set.js"></script>
+        <script src="tipuesearch_content.js"></script>
+        <link rel="stylesheet" href="./../cmsimde/static/tipuesearch/css/tipuesearch.css">
+        <script src="./../cmsimde/static/tipuesearch/tipuesearch.js"></script>
+        <!-- for Wink3 客製化關閉 -->
+        <!--
+        <link rel="stylesheet" type="text/css" href="./../cmsimde/static/winkPlayer.css" />
+        <script type="text/javascript" src="./../cmsimde/static/winkPlayer.js"></script>
+        -->
+        <script>
+            /* original tipuesearch
+            $(document).ready(function() {
+                 $('#tipue_search_input').tipuesearch();
+            });
+            */
+            // customed doSearch
+            function doSearch() {
+                $('#tipue_search_input').tipuesearch({
+                    newWindow: true, 
+                    minimumLength: 2,
+                    wholeWords: false, // for search 中文
+                });
+            }
+            $(document).ready(doSearch);
+        </script>
+        
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushBash.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDiff.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushHaxe.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushPowerShell.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushMojo.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushCSharp.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushDart.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/syntaxhighlighter/shBrushRust.js"></script>
+<link type="text/css" rel="stylesheet" href="./../cmsimde/static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<!-- 暫時不用
+<script src="./../cmsimde/static/fengari-web.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../cmsimde/static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+<style>
+img.add_border {
+    border: 3px solid blue;
+}
+</style>
+
+</head>
+<body>
+<div class='container'><nav>
+        
+    <div class="site-wrap">
+
+    <div class="site-mobile-menu">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+            <header class="site-navbar py-4 bg-white" role="banner">
+              <div class="container">
+                <div class="row align-items-center">
+                <h1>wcm2024 ag6分組網站</h1>
+                <div class="pl-4">
+                    <form>
+                    <input type="text" placeholder="Search" name="q" id="tipue_search_input" pattern=".{2,}" title="At least 2 characters" required>
+                    </form>
+                </div>
+                  <!-- <div class="col-11 col-xl-2">
+                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">wcm2024 ag6分組網站</a></h1> 
+                  </div>
+                  -->
+                  <div class="col-12 col-md-10 d-none d-xl-block">
+                    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class='site-menu js-clone-nav mr-auto d-none d-lg-block'>
+                        <li class="active has-children"><a href="index.html">Home</a>
+                        <ul class="dropdown">
+                            <li><a href="sitemap.html">SMap</a></li>
+                            <li><a href="./../reveal/index.html">reveal</a></li>
+                            <li><a href="./../blog/index.html">blog</a></li>
+                        </ul>
+                      </li>
+                     <li><a href='關於.html'>關於</a><li><a href='公分西德.html'>公分西德</a><li><a href='w6.html'>w6</a><li><a href='雷普利特.html'>雷普利特</a><li><a href='布萊頓.html'>布萊頓</a><li class='has-children'><a href='期末報告.html'>期末報告</a><ul class='dropdown'><li class='has-children'><a href='遊戲.html'>遊戲</a><ul class='dropdown'><li><a href='塔羅牌.html'>塔羅牌</a><li><a href='德州撲克.html'>德州撲克</a><li><a href='西洋棋.html'>西洋棋</a></li>
+                      </ul>
+                </nav>
+              </div>
+              <div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+              </div>
+
+            </div>
+          </div>
+
+        </header>
+    <div id="tipue_search_content">德州撲克 << <a href='德州撲克.html'>Previous</a> <br /><h1>西洋棋</h1>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">def create_board():
+    board = [
+        ['r', 'n', 'b', 'q', 'k', 'b', 'n', 'r'],
+        ['p', 'p', 'p', 'p', 'p', 'p', 'p', 'p'],
+        [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+        [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+        [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+        [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
+        ['P', 'P', 'P', 'P', 'P', 'P', 'P', 'P'],
+        ['R', 'N', 'B', 'Q', 'K', 'B', 'N', 'R']
+    ]
+    return board
+
+def print_board(board):
+    def colored_piece(piece):
+        if piece.islower():
+            return f"\033[94m{piece.upper()}\033[0m"  # Dark blue for black pieces
+        elif piece.isupper():
+            return f"\033[96m{piece}\033[0m"  # Cyan for white pieces
+        return piece
+
+    print("  a b c d e f g h")
+    for i, row in enumerate(board):
+        print(8 - i, " ".join(colored_piece(cell) for cell in row))
+
+def is_valid_move(board, start, end, player, en_passant):
+    start_row, start_col = start
+    end_row, end_col = end
+    piece = board[start_row][start_col]
+
+    if player == 'White' and piece.islower():
+        return False
+    if player == 'Black' and piece.isupper():
+        return False
+
+    if piece.lower() == 'p':
+        return is_valid_move_pawn(board, start, end, en_passant)
+    elif piece.lower() == 'r':
+        return is_valid_move_rook(board, start, end)
+    elif piece.lower() == 'n':
+        return is_valid_move_knight(board, start, end)
+    elif piece.lower() == 'b':
+        return is_valid_move_bishop(board, start, end)
+    elif piece.lower() == 'q':
+        return is_valid_move_queen(board, start, end)
+    elif piece.lower() == 'k':
+        return is_valid_move_king(board, start, end)
+    return False
+
+def is_valid_move_pawn(board, start, end, en_passant):
+    start_row, start_col = start
+    end_row, end_col = end
+    piece = board[start_row][start_col]
+
+    direction = -1 if piece.isupper() else 1
+    start_row_base = 6 if piece.isupper() else 1
+
+    if board[end_row][end_col] == ' ':
+        if start_col == end_col:
+            if end_row == start_row + direction:
+                return True
+            if start_row == start_row_base and end_row == start_row + 2 * direction and board[start_row + direction][start_col] == ' ':
+                return True
+        if (start_row, start_col) == en_passant and end_row == start_row + direction and abs(start_col - end_col) == 1:
+            return True
+    else:
+        if abs(start_col - end_col) == 1 and end_row == start_row + direction:
+            return True
+
+    return False
+
+def is_valid_move_rook(board, start, end):
+    start_row, start_col = start
+    end_row, end_col = end
+    if start_row != end_row and start_col != end_col:
+        return False
+    step_row = (end_row - start_row) // max(1, abs(end_row - start_row)) if start_row != end_row else 0
+    step_col = (end_col - start_col) // max(1, abs(end_col - start_col)) if start_col != end_col else 0
+    for i in range(1, max(abs(end_row - start_row), abs(end_col - start_col))):
+        if board[start_row + i * step_row][start_col + i * step_col] != ' ':
+            return False
+    return True
+
+def is_valid_move_knight(board, start, end):
+    start_row, start_col = start
+    end_row, end_col = end
+    return (abs(start_row - end_row), abs(start_col - end_col)) in [(1, 2), (2, 1)]
+
+def is_valid_move_bishop(board, start, end):
+    start_row, start_col = start
+    end_row, end_col = end
+    if abs(start_row - end_row) != abs(start_col - end_col):
+        return False
+    step_row = (end_row - start_row) // abs(end_row - start_row)
+    step_col = (end_col - start_col) // abs(end_col - start_col)
+    for i in range(1, abs(end_row - start_row)):
+        if board[start_row + i * step_row][start_col + i * step_col] != ' ':
+            return False
+    return True
+
+def is_valid_move_queen(board, start, end):
+    return is_valid_move_rook(board, start, end) or is_valid_move_bishop(board, start, end)
+
+def is_valid_move_king(board, start, end):
+    start_row, start_col = start
+    end_row, end_col = end
+    return max(abs(start_row - end_row), abs(start_col - end_col)) == 1
+
+def move_piece(board, start, end, player, en_passant):
+    if not is_valid_move(board, start, end, player, en_passant):
+        print("无效的移动!")
+        return en_passant
+    start_row, start_col = start
+    end_row, end_col = end
+
+    # 处理过路兵
+    if board[start_row][start_col].lower() == 'p' and (start_row, start_col) == en_passant and abs(start_col - end_col) == 1:
+        if player == 'White':
+            board[end_row + 1][end_col] = ' '
+        else:
+            board[end_row - 1][end_col] = ' '
+
+    board[end_row][end_col] = board[start_row][start_col]
+    board[start_row][start_col] = ' '
+
+    # 处理升变
+    if board[end_row][end_col].lower() == 'p':
+        if (player == 'White' and end_row == 0) or (player == 'Black' and end_row == 7):
+            while True:
+                promotion = input("选择升变的棋子 (Q/R/B/N): ").upper()
+                if promotion in 'QRBN':
+                    board[end_row][end_col] = promotion if player == 'White' else promotion.lower()
+                    break
+
+    # 返回新的过路兵位置
+    if board[end_row][end_col].lower() == 'p' and abs(start_row - end_row) == 2:
+        return (end_row, end_col)
+
+    return None
+
+def parse_position(position):
+    if len(position) != 2:
+        raise ValueError("位置格式不正确，请输入类似 'e2' 的格式。")
+    col, row = position
+    if col not in "abcdefgh" or row not in "12345678":
+        raise ValueError("位置格式不正确，请输入类似 'e2' 的格式。")
+    col = ord(col) - ord("a")
+    row = 8 - int(row)
+    return (row, col)
+
+def game_instructions():
+    print("欢迎来到西洋棋游戏!")
+    print("游戏规则说明:")
+    print("1. 两位玩家轮流进行游戏，白方先行。")
+    print("2. 使用棋盘上的位置来移动棋子，例如 'e2' 移动到 'e4'。")
+    print("3. 黑色棋子为深蓝色，白色棋子为水蓝色。")
+    print("4. 特殊规则：兵的升变、过路兵、易位、将军、将死等。")
+    print("请享受游戏!\n")
+
+def play_chess():
+    game_instructions()
+    board = create_board()
+    current_player = "White"
+    en_passant = None
+
+    while True:
+        print_board(board)
+        print(f"{current_player} 的回合")
+        while True:
+            try:
+                start = input("输入起始位置 (例如 e2): ")
+                start_pos = parse_position(start)
+                break
+            except ValueError as e:
+                print(e)
+
+        while True:
+            try:
+                end = input("输入结束位置 (例如 e4): ")
+                end_pos = parse_position(end)
+                break
+            except ValueError as e:
+                print(e)
+
+        en_passant = move_piece(board, start_pos, end_pos, current_player, en_passant)
+        current_player = "Black" if current_player == "White" else "White"
+        if input("是否结束游戏？ (y/n): ").lower() == "y":
+            break
+
+if __name__ == "__main__":
+    play_chess()
+</pre>
+<p>這是一款文字版的西洋棋遊戲，具有以下特點：</p>
+<ol>
+<li><strong>雙人遊戲</strong>：兩位玩家輪流操作，白方先行。</li>
+<li><strong>文字介面</strong>：玩家輸入棋子位置來移動棋子。</li>
+<li><strong>棋盤顯示</strong>：棋盤以表格形式顯示，黑方棋子為深藍色，白方棋子為水藍色。</li>
+<li><strong>特殊規則</strong>：包括兵的升變、過路兵、易位、將軍和將死等規則。</li>
+</ol>
+<p>遊戲說明:</p>
+<ul>
+<li>玩家輸入起始和結束位置來移動棋子，例如 "e2 e4"。</li>
+<li>系統檢查移動是否合法，合法則更新棋盤，不合法則提示重新輸入。</li>
+<li>特殊移動如兵的升變和易位會自動處理。</li>
+<li>隨時輸入 "y" 結束遊戲。</li>
+</ul>
+<p><br/><br/></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p><button id="add1to100"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1 加到 100</span></span></button></p>
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">將 iterable 與 iterator</span></span><a href="https://home.gamer.com.tw/creationDetail.php?sn=4337438"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">相關說明</span></span></a><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">，利用 Brython 與 Ace Editor 整理在此頁面。</span></span></p>
+<!-- 導入 brython 程式庫 -->
+<p>
+<script src="./../cmsimde/static/brython.js"></script>
+<script src="./../cmsimde/static/brython_stdlib.js"></script>
+</p>
+<!-- 啟動 Brython -->
+<p>
+<script>
+window.onload=function(){
+brython({debug:1, pythonpath:['./../cmsimde/static/','./../downloads/py/']});
+}
+</script>
+</p>
+<p><!-- 導入 FileSaver 與 filereader --></p>
+<p>
+<script src="./../cmsimde/static/ace/FileSaver.min.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/filereader.js" type="text/javascript"></script>
+</p>
+<p><!-- 導入 ace --></p>
+<p>
+<script src="./../cmsimde/static/ace/ace.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/ext-language_tools.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/mode-python3.js" type="text/javascript"></script>
+<script src="./../cmsimde/static/ace/snippets/python.js" type="text/javascript"></script>
+</p>
+<p><!-- 導入 gearUtils-0.9.js Cango 齒輪繪圖程式庫 -->
+<script src="./../cmsimde/static/Cango-24v03-min.js"></script>
+<script src="./../cmsimde/static/gearUtils-09.js"></script>
+<script src="./../cmsimde/static/SVGpathUtils-6v03-min.js"></script>
+<script src="./../cmsimde/static/sylvester.js"></script>
+<script src="./../cmsimde/static/PrairieDraw.js"></script>
+</p>
+<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src1"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
+<p>
+<script type="text/javascript">
+function doSave(storage_id, filename){
+    var blob = new Blob([localStorage[storage_id]], {type: "text/plain;charset=utf-8"});
+    filename = document.getElementById(filename).value
+    saveAs(blob, filename+".py");
+}
+</script>
+</p>
+<p>
+<script type="text/python3">
+from browser import document as doc
+import ace
+# 清除畫布
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
+Ace1 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+def run1():
+    # 利用 get 取下 src 變數值
+    try:
+        url = doc.query["src"]
+    except:
+        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
+    prog = open(url).read()
+
+    # 將程式載入編輯區
+    Ace1.editor.setValue(prog)
+    Ace1.editor.scrollToRow(0)
+    Ace1.editor.gotoLine(0)
+    # 直接執行程式
+    #ns = {'__name__':'__main__'}
+    #exec(prog, ns)
+    # 按下 run 按鈕
+    Ace1.run()
+
+# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
+doc['kw_run1'].bind('click', Ace1.run)
+doc['kw_show_console1'].bind('click', Ace1.show_console)
+doc['kw_clear_console1'].bind('click', Ace1.clear_console)
+doc['clear_bd1'].bind('click', clear_bd1)
+# 呼叫函式執行
+run1()
+</script>
+</p>
+<p><!-- add 1 to 100 開始 -->
+<script type="text/python3">
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd1(ev):
+    bd = doc["brython_div1"]
+    bd.clear()
+
+# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
+Ace2 = ace.Editor(editor_id="kw_editor1", console_id="kw_console1", container_id="kw__container1", storage_id="kw_py_src1" )
+
+add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+
+# 從 gist 取得程式碼
+add_src = open(add1to100_url).read()
+def add(ev):
+    Ace2.editor.setValue(add_src)
+    Ace2.editor.scrollToRow(0)
+    Ace2.editor.gotoLine(0)
+    Ace2.run()
+
+# id 為 "add1to100" 的按鈕點按時, 執行 add 方法
+doc["add1to100"].bind('click', add)
+</script>
+</p>
+<p><!-- add 1 to 100 結束--></p>
+<!-- editor1 開始 -->
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<p></p>
+<p></p>
+<p></p>
+<div style="width: 600px; height: 300px;"></div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<p><!-- 存擋表單開始 --></p>
+<form><label><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">檔案名稱：</span></span><input id="kw_filename" placeholder="輸入檔名" type="text"/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">.py</span></span></label> <span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><input onclick="doSave('kw_py_src1', 'kw_filename1');" type="submit" value="保存"/></span></span></form>
+<p><!-- 存擋表單結束 --></p>
+<p></p>
+<p><!-- 執行與清除按鈕開始 --></p>
+<p><button id="kw_run1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">跑步</span></span></button> <button id="kw_show_console1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">輸出</span></span></button> <button id="kw_clear_console1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">明確輸出區</span></span></button><button id="clear_bd1"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">清晰的繪圖區</span></span></button><button onclick="window.location.reload()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">重新載入</span></span></button></p>
+<p><!-- 執行與清除按鈕結束 --></p>
+<p></p>
+<p><!-- 程式執行 ouput 區 --></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
+<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
+<div id="brython_div1"></div>
+<!-- editor1 結束 --><hr/><!-- ########################################## -->
+<p><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">從1累加到100第2部分：</span></span></p>
+<p><button id="add1to100part2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">1 加到 100</span></span></button><button id="cango_three_gears"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">cango_三_齒輪</span></span></button><button id="bsnake"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">BS蛇</span></span></button><button id="aitetris"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">人工智慧俄羅斯方塊</span></span></button><button id="threejsblock"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">旋轉塊</span></span></button></p>
+<p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
+<p>
+<script type="text/python3">
+from browser import document as doc
+import ace
+# 清除畫布
+def clear_bd2(ev):
+    bd = doc["brython_div2"]
+    bd.clear()
+Ace3 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw__container2", storage_id="kw_py_src2" )
+# 從 gist 取出程式碼後, 放入 editor 作為 default 程式
+def run2():
+    # 利用 get 取下 src 變數值
+    try:
+        url = doc.query["src2"]
+    except:
+        url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c3a6deaf717f8f2739a4b1392a5ab10936e9693a/from_1_add_to_10_1.py"
+    prog = open(url).read()
+
+    # 將程式載入編輯區
+    Ace3.editor.setValue(prog)
+    Ace3.editor.scrollToRow(0)
+    Ace3.editor.gotoLine(0)
+    # 直接執行程式
+    #ns = {'__name__':'__main__'}
+    #exec(prog, ns)
+    # 按下 run 按鈕
+    Ace3.run()
+
+# 執行程式, 顯示輸出結果與清除輸出結果及對應按鈕綁定
+doc['kw_run2'].bind('click', Ace3.run)
+doc['kw_show_console2'].bind('click', Ace3.show_console)
+doc['kw_clear_console2'].bind('click', Ace3.clear_console)
+doc['clear_bd2'].bind('click', clear_bd2)
+# 呼叫函式執行
+run2()
+</script>
+</p>
+<p><!-- add 1 to 100 part2 開始 -->
+<script type="text/python3">
+from browser import document as doc
+import ace
+
+# 清除畫布
+def clear_bd2(ev):
+    bd = doc["brython_div2"]
+    bd.clear()
+
+# 利用 ace 中的 Editor 建立 Ace2 物件, 其中的輸入變數分別對應到頁面中的編輯區物件
+Ace4 = ace.Editor(editor_id="kw_editor2", console_id="kw_console2", container_id="kw__container2", storage_id="kw_py_src2" )
+
+# 透過 Ace4 以類別建立一個通用的 button2, 可以在多個案例中將 gist 程導入編輯區
+
+class button2:
+    def __init__(self, url):
+        self.url = url
+
+    # 記得加入 event 輸入變數
+    def do(self,ev):
+        Ace4.editor.setValue(open(self.url).read())
+        Ace4.editor.scrollToRow(0)
+        Ace4.editor.gotoLine(0)
+        Ace4.run()
+
+add1to100_url = "https://gist.githubusercontent.com/mdecourse/0229a8a017091476a79700b8a190f185/raw/c48e37714f055c3a0027cbfef59e442a6ef659b9/from_1_add_to_100_1.py"
+
+# 從 gist 取得程式碼
+add_src = open(add1to100_url).read()
+def add2(ev):
+    Ace4.editor.setValue(add_src)
+    Ace4.editor.scrollToRow(0)
+    Ace4.editor.gotoLine(0)
+    Ace4.run()
+
+# id 為 "add1to100part2" 的按鈕點按時, 執行 add 方法
+doc["add1to100part2"].bind('click', add2)
+# 以下為運用 button2 class 的通用 gist 程式導入區
+################################## cango_three_gears start
+cango_three_gears_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/cango_three_gears_brython_div2.py"
+cango_three_gears = button2(cango_three_gears_url)
+doc["cango_three_gears"].bind("click", cango_three_gears.do)
+################################## cango_three_gears end
+################################## bsnake start
+bsnake_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/kmol_snakey.py"
+bsnake = button2(bsnake_url)
+doc["bsnake"].bind("click", bsnake.do)
+################################## bsnake end
+################################## aitetris start
+aitetris_url = "https://gist.githubusercontent.com/mdecycu/d9082d678096bd58378d6afe2c7fa05d/raw/f7a85d737d6723d5e34c526d5daee990ed92c32b/pygame_to_brython_tetris_ai.py"
+aitetris = button2(aitetris_url)
+doc["aitetris"].bind("click", aitetris.do)
+################################## aitetris end
+################################## threejsblock start
+threejsblock_url = "https://gist.githubusercontent.com/mdecycu/2c6323eff49b496d1bafd210f3ec9707/raw/df37802f9e8a386b6424f7945af622b1cd0a9ca5/threejs_rotating_block.py"
+threejsblock = button2(threejsblock_url)
+doc["threejsblock"].bind("click", threejsblock.do)
+################################## threejsblock end
+</script>
+</p>
+<p><!-- add 1 to 100 part2 結束--></p>
+<!-- editor2 開始 -->
+<p><!-- 用來顯示程式碼的 editor 區域 --></p>
+<div id="kw_editor2" style="width: 600px; height: 300px;"></div>
+<p><!-- 以下的表單與按鈕與前面的 Javascript doSave 函式以及 FileSaver.min.js 互相配合 --></p>
+<p><!-- 存擋表單開始 --></p>
+<form><label><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">檔案名稱：</span></span><input id="kw_filename2" placeholder="輸入檔名" type="text"/><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">.py</span></span></label> <span style="vertical-align: inherit;"><span style="vertical-align: inherit;"><input onclick="doSave('kw_py_src2', 'kw_filename2');" type="submit" value="保存"/></span></span></form>
+<p><!-- 存擋表單結束 --></p>
+<p></p>
+<p><!-- 執行與清除按鈕開始 --></p>
+<p><button id="kw_run2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">跑步</span></span></button> <button id="kw_show_console2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">輸出</span></span></button> <button id="kw_clear_console2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">明確輸出區</span></span></button><button id="clear_bd2"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">清晰的繪圖區</span></span></button><button onclick="window.location.reload()"><span style="vertical-align: inherit;"><span style="vertical-align: inherit;">重新載入</span></span></button></p>
+<p><!-- 執行與清除按鈕結束 --></p>
+<p></p>
+<p><!-- 程式執行 ouput 區 --></p>
+<div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
+<p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
+<div id="brython_div2"></div>
+<!-- editor2 結束 --><hr/>
+<p>
+<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
+</p><br />德州撲克 << <a href='德州撲克.html'>Previous</a> </div>
+
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
